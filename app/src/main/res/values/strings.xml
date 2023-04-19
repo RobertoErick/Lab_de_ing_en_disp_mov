@@ -107,4 +107,5 @@
     <string name="chat_titulo">Chat</string>
     <string name="buscar_chat">Buscar</string>
     <string name="btn_nuevo_chat">+ Nuevo Chat</string>
+    <string name="scanner">Scanner</string>
 </resources>

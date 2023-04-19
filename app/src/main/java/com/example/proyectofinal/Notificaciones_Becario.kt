@@ -21,11 +21,5 @@ class Notificaciones_Becario : AppCompatActivity() {
             val intent = Intent(this, Becario::class.java)
             startActivity(intent)
         }
-
-        val chat: Button = findViewById(R.id.btn_chat_notificaciones)
-        chat.setOnClickListener {
-            val intent = Intent(this, Chat::class.java)
-            startActivity(intent)
-        }
     }
 }

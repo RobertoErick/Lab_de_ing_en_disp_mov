@@ -16,9 +16,9 @@ class Crear_Cuenta_De_Acceso_Administrador : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val chat: Button = findViewById(R.id.btn_chat_crear_cuentas_de_acceso)
-        chat.setOnClickListener {
-            val intent = Intent(this, Chat::class.java)
+        val crear_cuenta: Button = findViewById(R.id.crear_cuenta_crear_cuentas_de_acceso)
+        crear_cuenta.setOnClickListener {
+            val intent = Intent(this, Creacion_de_cuenta_Administrador::class.java)
             startActivity(intent)
         }
     }

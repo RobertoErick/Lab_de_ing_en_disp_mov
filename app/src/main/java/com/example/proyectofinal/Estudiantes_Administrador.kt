@@ -21,11 +21,5 @@ class Estudiantes_Administrador : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
-        val chat: Button = findViewById(R.id.btn_chat_estudiantes)
-        chat.setOnClickListener {
-            val intent = Intent(this, Chat::class.java)
-            startActivity(intent)
-        }
     }
 }

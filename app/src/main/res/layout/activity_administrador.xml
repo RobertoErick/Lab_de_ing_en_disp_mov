@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Administrador">
 
+    <Button
+        android:id="@+id/btn_scanner"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/boton_redondo"
+        android:text="@string/scanner"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rol_semanal_admin"
+        tools:ignore="VisualLintButtonSize,DuplicateSpeakableTextCheck" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -49,7 +63,7 @@
         android:id="@+id/btn_estudiantes"
         android:layout_width="336dp"
         android:layout_height="51dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="190dp"
         android:background="@drawable/boton_redondo"
         android:text="@string/estudiantes_btn"
         android:textColor="#000000"
@@ -63,56 +77,42 @@
         android:id="@+id/btn_control_de_acceso"
         android:layout_width="336dp"
         android:layout_height="51dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/boton_redondo"
         android:text="@string/control_de_acceso"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_cuenta_de_acceso"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/btn_rol_semanal_admin"
         android:layout_width="336dp"
         android:layout_height="51dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/boton_redondo"
         android:text="@string/rol_semanal"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="VisualLintButtonSize" />
-
-    <Button
-        android:id="@+id/btn_notificar"
-        android:layout_width="336dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="520dp"
-        android:background="@drawable/boton_redondo"
-        android:text="@string/notificar"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_control_de_acceso"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/btn_crear_cuenta_de_acceso"
         android:layout_width="336dp"
         android:layout_height="51dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/boton_redondo"
         android:text="@string/crear_cuenta_de_acceso"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_estudiantes"
         tools:ignore="VisualLintButtonSize" />
 
     <ImageView
@@ -126,14 +126,4 @@
         app:srcCompat="@drawable/fcq_logo"
         android:contentDescription="@string/fcq_logo" />
 
-    <Button
-        android:id="@+id/btn_chat_admin"
-        android:layout_width="78dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="36dp"
-        android:background="@drawable/icono_mensaje"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

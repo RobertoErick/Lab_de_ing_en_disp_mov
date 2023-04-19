@@ -7,17 +7,6 @@
     tools:context=".Estudiantes_Administrador">
 
     <Button
-        android:id="@+id/btn_chat_estudiantes"
-        android:layout_width="78dp"
-        android:layout_height="75dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="36dp"
-        android:background="@drawable/icono_mensaje"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
         android:id="@+id/cerrar_sesion_estudiantes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

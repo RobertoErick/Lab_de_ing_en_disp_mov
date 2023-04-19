@@ -1,10 +1,10 @@
 package com.example.proyectofinal
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.*
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         lateinit var spinner1: Spinner
         spinner1 = findViewById(R.id.spinner) as Spinner
 
-        val opciones = arrayOf("Administrador", "Becario | Servicio Social", "Scanner")
+        val opciones = arrayOf("Administrador", "Becario | Servicio Social")
         val adapter = ArrayAdapter(this, R.layout.spinner_item_opciones, opciones)
         spinner1.adapter = adapter
 
@@ -28,9 +28,6 @@ class MainActivity : AppCompatActivity() {
             } else if (seleccion == "Becario | Servicio Social") {
                 val intent1 = Intent(this, Becario::class.java)
                 startActivity(intent1)
-            } else if (seleccion == "Scanner") {
-                val intent2 = Intent(this, Scanner::class.java)
-                startActivity(intent2)
             }
         }
 

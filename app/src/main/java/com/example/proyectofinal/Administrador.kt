@@ -1,10 +1,9 @@
 package com.example.proyectofinal
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.service.controls.actions.ControlAction
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class Administrador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,21 +34,15 @@ class Administrador : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val notificar: Button = findViewById(R.id.btn_notificar)
-        notificar.setOnClickListener {
-            val intent = Intent(this, Notificar_Administrador::class.java)
-            startActivity(intent)
-        }
-
         val btn_duda: Button = findViewById(R.id.cerrar_sesion)
         btn_duda.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        val chat: Button = findViewById(R.id.btn_chat_admin)
-        chat.setOnClickListener {
-            val intent = Intent(this, Chat::class.java)
+        val scanner: Button = findViewById(R.id.btn_scanner)
+        scanner.setOnClickListener {
+            val intent = Intent(this, Scanner::class.java)
             startActivity(intent)
         }
     }

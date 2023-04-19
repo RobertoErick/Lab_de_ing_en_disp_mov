@@ -21,7 +21,7 @@ class Scanner : AppCompatActivity() {
 
         val miBoton: Button = findViewById(R.id.escanear_codigo)
         miBoton.setOnClickListener {
-            Toast.makeText(this, "Ya estas en esta pestaña", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Ya estás en esta pestaña.", Toast.LENGTH_SHORT).show()
         }
 
         val btn_ingresar_correo: Button = findViewById(R.id.ingresar_correo_btn)
@@ -59,7 +59,5 @@ class Scanner : AppCompatActivity() {
         }else{
             super.onActivityResult(requestCode, resultCode, data)
         }
-
-
     }
 }

@@ -22,7 +22,7 @@ class Notificar_Administrador : AppCompatActivity() {
         lateinit var spinner1: Spinner
         spinner1 = findViewById(R.id.spinner2) as Spinner
 
-        val opciones = arrayOf("Administrador", "Becario | Servicio Social", "Scanner")
+        val opciones = arrayOf("Administrador", "Becario | Servicio Social")
         val adapter = ArrayAdapter(this, R.layout.spinner_item_opciones, opciones)
         spinner1.adapter = adapter
 

@@ -21,11 +21,5 @@ class Rol_Semanal_Becario : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
-        val chat: Button = findViewById(R.id.btn_rol_semanal)
-        chat.setOnClickListener {
-            val intent = Intent(this, Chat::class.java)
-            startActivity(intent)
-        }
     }
 }

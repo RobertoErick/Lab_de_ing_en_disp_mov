@@ -10,12 +10,6 @@ class Becario : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_becario)
 
-        val btn_cerrar_sesion: Button = findViewById(R.id.cerrar_sesion_becario)
-        btn_cerrar_sesion.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-
         val codigo_qr: Button = findViewById(R.id.codigo_qr_btn_becario)
         codigo_qr.setOnClickListener {
             val intent = Intent(this, Codigo_QR_Becario::class.java)
@@ -28,21 +22,15 @@ class Becario : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val notificaciones: Button = findViewById(R.id.btn_notificaciones)
-        notificaciones.setOnClickListener {
-            val intent = Intent(this, Notificaciones_Becario::class.java)
-            startActivity(intent)
-        }
-
         val perfil: Button = findViewById(R.id.btn_perfil)
         perfil.setOnClickListener {
             val intent = Intent(this, Perfil_Becario::class.java)
             startActivity(intent)
         }
 
-        val chat: Button = findViewById(R.id.btn_chat_becario)
-        chat.setOnClickListener {
-            val intent = Intent(this, Chat::class.java)
+        val btn_cerrar_sesion: Button = findViewById(R.id.cerrar_sesion_becario)
+        btn_cerrar_sesion.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
