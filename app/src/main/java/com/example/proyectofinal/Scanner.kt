@@ -55,7 +55,6 @@ class Scanner : AppCompatActivity() {
             }else{
                 Toast.makeText(this, "El valor escaneado es: ${result.contents}", Toast.LENGTH_SHORT).show()
             }
-
         }else{
             super.onActivityResult(requestCode, resultCode, data)
         }
