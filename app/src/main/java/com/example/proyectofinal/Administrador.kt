@@ -34,9 +34,12 @@ class Administrador : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btn_duda: Button = findViewById(R.id.cerrar_sesion)
-        btn_duda.setOnClickListener {
+        val logoutBtn: Button = findViewById(R.id.cerrar_sesion)
+        logoutBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            // Evitamos que se pueda regresar al login pulsando "atrás"
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            UserStore.logout()
             startActivity(intent)
         }
 

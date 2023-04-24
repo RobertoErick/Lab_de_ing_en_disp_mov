@@ -28,9 +28,12 @@ class Becario : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btn_cerrar_sesion: Button = findViewById(R.id.cerrar_sesion_becario)
-        btn_cerrar_sesion.setOnClickListener {
+        val logoutBtn: Button = findViewById(R.id.cerrar_sesion_becario)
+        logoutBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            // Evitamos que se pueda regresar al login pulsando "atrás"
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            UserStore.logout()
             startActivity(intent)
         }
     }
